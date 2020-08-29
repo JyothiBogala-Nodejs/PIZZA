@@ -7161,6 +7161,9 @@ nav li:last-child {
 nav li a {
   color: black; }
 
+section.main {
+  background: #f1db96; }
+
 body {
   margin-bottom: 60px; }
 

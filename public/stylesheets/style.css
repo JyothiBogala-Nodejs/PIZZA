@@ -7171,11 +7171,11 @@ body > .container {
   padding-top: 60px; }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  line-height: 100px;
   background-color: lightgrey; }
 
 /*# sourceMappingURL=style.css.map */

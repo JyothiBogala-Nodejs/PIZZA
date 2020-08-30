@@ -16,7 +16,16 @@ header
       ul.navbar-nav.mr-auto
     ul.nav.justify-content-end
       li.nav-item.ml-3
-        a.nav-link(href='/menu') Menu
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Pizza</button>
+          <button class="dropdown-item" type="button">Sides</button>
+          <button class="dropdown-item" type="button">Pasta</button>
+          <button class="dropdown-item" type="button">Beverages</button>
+          <button class="dropdown-item" type="button">Desserts</button>
+        </div>
+      </div>   
       li.nav-item.ml-3
         a.nav-link(href='/register') Register
       li.nav-item.ml-3

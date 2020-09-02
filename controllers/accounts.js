@@ -2,7 +2,7 @@ var express = require('express');
 var User = require('../models/user');
 
 exports.signupForm = function(req, res) {
-    res.render('accounts/new', { user: {}, errors: [] });
+    res.render('accounts/register', { user: {}, errors: [] });
 };
 
 exports.create = function(req, res) {
@@ -16,7 +16,7 @@ exports.create = function(req, res) {
 
     newUser.save(function(err) {
       if (err) {
-        res.render('accounts/new', { user: newUser, errors: err.errors });
+        res.render('accounts/register', { user: newUser, errors: err.errors });
       } else {
         res.redirect('/');
         console.log('User saved successfully!');

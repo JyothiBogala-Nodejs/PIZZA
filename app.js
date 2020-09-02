@@ -43,6 +43,9 @@ app.use('/', indexRouter);
 app.use('/', accountsRouter);
 app.use('/login', accountsRouter);
 app.use('/cart', accountsRouter);
+app.use('/about', accountsRouter);
+app.use('/contact', accountsRouter);
+app.use('/nutrition', accountsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

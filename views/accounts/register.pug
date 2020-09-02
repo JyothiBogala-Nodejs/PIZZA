@@ -3,8 +3,8 @@ extends ../layout
 block content
   h1.p-4 Registration Form
 
-  form(method="POST").p-3
-    .form-group
+  form(method="POST").p-2
+    .form-group.ml-3
       label(for="usernameInput") Email
       input.form-control#usernameInput(
         name="username"
@@ -16,7 +16,7 @@ block content
       if errors.username
         #usernameInput.invalid-feedback= errors.username.message
 
-    .form-group
+    .form-group.ml-3
       label(for="password") Password
       input.form-control#password(
         name="password"
@@ -27,7 +27,7 @@ block content
       if errors.password
         #password.invalid-feedback= errors.password.message
 
-    .form-group
+    .form-group.ml-3
       label(for="confirmPassword") Password
       input.form-control#confirmPassword(
         name="confirmPassword"
@@ -35,4 +35,4 @@ block content
         placeholder="Confirm Password"
       )
 
-    button.btn.btn-primary(type="submit") Submit
+    button.btn.btn-primary.ml-3(type="submit") Submit

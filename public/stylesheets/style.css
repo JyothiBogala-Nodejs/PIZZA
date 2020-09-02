@@ -7164,6 +7164,9 @@ nav li a {
 section.main {
   background: #f1db96; }
 
+section.empty-cart {
+  img-width: 40%; }
+
 body {
   margin-bottom: 60px;
   height: 4000px; }

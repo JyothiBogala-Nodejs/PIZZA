@@ -20,6 +20,11 @@ db.once('open', function() {
 
 var indexRouter = require('./routes/index');
 var accountsRouter = require('./routes/accounts');
+var loginRouter = require('./routes/login');
+var cartRouter = require('./routes/cart');
+var aboutRouter = require('./routes/about');
+var contactRouter = require('./routes/contact');
+var nutritionRouter = require('./routes/nutrition');
 
 var app = express();
 
@@ -41,11 +46,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/', accountsRouter);
-app.use('/login', accountsRouter);
-app.use('/cart', accountsRouter);
-app.use('/about', accountsRouter);
-app.use('/contact', accountsRouter);
-app.use('/nutrition', accountsRouter);
+app.use('/', loginRouter);
+app.use('/', cartRouter);
+app.use('/', aboutRouter);
+app.use('/', contactRouter);
+app.use('/', nutritionRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -7153,6 +7153,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+#thumbnail {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); }
+
 nav li:last-child {
   background: #FE5F1E; }
   nav li:last-child:hover {
@@ -7180,6 +7183,6 @@ body > .container {
   width: 100%;
   height: 70px;
   line-height: 100px;
-  background-color: lightgrey; }
+  background-color: black; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7262,4 +7262,7 @@ body > .container {
   background-color: #FE5F1E;
   transition: all 0.5s linear; }
 
+.dropdown-menu a {
+  text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */

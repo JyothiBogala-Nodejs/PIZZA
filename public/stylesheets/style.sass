@@ -35,14 +35,72 @@ body > .container
      padding-top: 60px
 
 .footer
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 350px;
   line-height: 100px;
   background-color: black;
-  
 
+.main-content
+  display: flex;
+
+.main-content .box 
+   flex-basis: 50%;
+   padding: 5px 70px;
+   color: white;
+   line-height: 30px;
+
+.box h2
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;  
+
+.page-title:after
+  content: "";
+  display: block;
+  width: 12%;
+  padding-top: 15px;
+  border-bottom: 2px solid $primary;
+
+.left .content p
+   text-align: justify;
+   line-height: 20px;
+   margin-top: 30px;
+   padding: 10px;
+
+.left .content.social
+   margin: 10px 0 0 0;
+
+.left .content .social a
+   padding: 0 2px;
+   
+.left .content .social a span
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: 0.3s;
+
+.left .content .social a span:hover
+   background: white;  
+
+.center span 
+   color: white;
+   padding: 15px;
+   
+.right .text
+   color: white;
+   text-align: justify;
+   padding: 5px;
+
+.box .content
+   margin: 30px 0 0 0;
+
+   
 .text 
   text-align: center;
   color: black;
@@ -107,9 +165,13 @@ body > .container
 .dropdown-menu a
    text-decoration: none;
 
+.right .btn
 
-
-
+  
+   
+  
+   
+ 
   
 
 

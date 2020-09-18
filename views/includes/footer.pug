@@ -1,19 +1,38 @@
 footer.footer
-  .container
-    <div class="row text-center d-flex justify-content-center pt-4 mb-3 ">
-       <div class="col-md-3 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-             <a href="/about">About</a>
-          </h6>
-       </div>
-       <div class="col-md-3 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="/contact">Contact Us</a>
-          </h6>
-       </div>
-       <div class="col-md-3 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="/nutrition">Nutrition</a>
-          </h6>
-       </div>
-    </div>
+  .main-content
+    .left.box
+      h2.page-title About Us
+      .content
+        p Maecenas cursus quis tellus ut lobortis. Aliquam vitae volutpat nisl, in convallis dolor. Proin justo lorem, tempus et bibendum ac, ultrices a quam. Etiam aliquet non nisl sed condimentum. Duis ac faucibus leo, sed lobortis metus. Sed non massa a magna tincidunt tempor eu commodo dui. Nulla facilisi..   
+        .social
+          a(href='https://www.facebook.com/')
+            span.fab.fa-facebook-f
+          a(href='https://www.twitter.com/')
+            span.fab.fa-twitter
+          a(href='https://www.instagram.com/')
+            span.fab.fa-instagram
+          a(href='https://www.youtube.com/')
+            span.fab.fa-youtube
+    .center.box
+      h2.page-title Address
+      .content
+        .place
+           span.fas.fa-map-marker-alt
+           span.text Calgary, AB
+        .phone
+           span.fas.fa-phone-alt
+           span.text 123-456-7890
+        .email
+           span.fas.fa-envelope
+           span.text abc@example.com
+    .right.box
+      h2.page-title Contact Us
+      .content
+        form(action='#')
+         .email
+           .text Email *
+           input(type='email' required='').w-75
+         .msg
+           .text Message *
+           textarea(rows='2' cols='35' required='')
+         button(type='submit').btn.btn-primary.rounded.pt-1.pb-1.mt-2 Send

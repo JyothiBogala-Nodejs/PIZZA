@@ -2,6 +2,6 @@ var express = require('express');
 
 
 exports.loginForm = function(req, res) {
-    res.render('accounts/login')
+    res.render('login/new')
 };
 

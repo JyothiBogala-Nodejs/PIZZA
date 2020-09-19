@@ -19,7 +19,7 @@ db.once('open', function() {
 });
 
 var indexRouter = require('./routes/index');
-var accountsRouter = require('./routes/accounts');
+var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
 var cartRouter = require('./routes/cart');
 
@@ -43,7 +43,7 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/', accountsRouter);
+app.use('/', registerRouter);
 app.use('/', loginRouter);
 app.use('/', cartRouter);
 

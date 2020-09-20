@@ -22,7 +22,7 @@ var indexRouter = require('./routes/index');
 var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
 var cartRouter = require('./routes/cart');
-
+var categoryRouter = require('./routes/category');
 
 var app = express();
 
@@ -46,6 +46,7 @@ app.use('/', indexRouter);
 app.use('/', registerRouter);
 app.use('/', loginRouter);
 app.use('/', cartRouter);
+app.use('/', categoryRouter);
 
 
 // catch 404 and forward to error handler

@@ -1,15 +1,12 @@
 extends ../layout
 
 block content
-  <section class = "empty-cart">
-     <div class = "container mx-auto text-center w-50">
-         <h1 class = "text-3xl font-bold mb-2 p-4">Cart Empty</h1>
-         <p>You probably haven't ordered a pizza yet.<br>
-              To order a pizza,got to the main pizza.</p>
-         <img class="py-4 w-100 mx-auto "src = "./images/empty-cart.png" alt="empty cart" >
-         <a href="/" class="btn btn-primary">Go back</a>
-     </div>
-     
-     
-     
-  </section>
+   section.empty-cart
+    .container.mx-auto.text-center.w-50
+      h1.text-3xl.font-bold.mb-2.p-4 Cart Empty
+      p
+        | You probably haven&apos;t ordered a pizza yet.
+        br
+        | To order a pizza,got to the main pizza.
+      img.py-4.w-100.mx-auto(src='./images/empty-cart.png' alt='empty cart')
+      a.btn.btn-primary(href='/') Go back

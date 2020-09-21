@@ -7323,4 +7323,16 @@ body > .container {
 .dropdown-menu a {
   text-decoration: none; }
 
+.add-to-cart {
+  border: 2px solid #FE5F1E;
+  color: #FE5F1E;
+  border-radius: 25px; }
+  .add-to-cart:hover {
+    background-color: #FE5F1E;
+    color: white; }
+
+.price {
+  font-size: 20px;
+  font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */

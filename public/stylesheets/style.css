@@ -7328,7 +7328,7 @@ body > .container {
   color: #FE5F1E;
   border-radius: 25px; }
   .add-to-cart:hover {
-    background-color: #FE5F1E;
+    background: #FE5F1E;
     color: white; }
 
 .price {
